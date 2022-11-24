@@ -5,8 +5,8 @@ x = int(input())
 y = int(input())
 z = int(input())
 
-def truth(a, b, c):
-    if (not a or b or c) == (not a and not b and not c):
-        return truth
+def check(a, b, c):
+    if not(a or b or c) == (not a and not b and not c):
+        return 'Утверждение верно!'
 
-print(truth(x, y, z))
+print(check(x, y, z))
